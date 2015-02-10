@@ -1,0 +1,22 @@
+{
+  "name": "xform-to-json",
+  "version": "1.0.0",
+  "description": "Translate an XForm XML string to JSON.",
+  "main": "xform-to-json.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^1.10.0",
+    "lodash": "^3.0.1",
+    "mocha": "^2.1.0",
+    "traverse": "^0.6.6",
+    "uuid": "^2.0.1",
+    "xml2js": "^0.4.4"
+  }
+}

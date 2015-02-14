@@ -19,6 +19,14 @@ function updateProperties(value) {
     this.remove();
   }
 
+  // Normalize true and false to lowercase so that JSON.parse handles
+  // converting them
+  if (typeof value === 'string' &&
+      (value.toLowerCase() === 'true' ||
+       value.toLowerCase() === 'false')) {
+    value = value.toLowerCase();
+  }
+
   try {
     // This gets integers, floats, and true/false
     result = JSON.parse(value);

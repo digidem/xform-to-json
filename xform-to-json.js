@@ -10,7 +10,7 @@ var parseXmlString = new xml2js.Parser({
   explicitArray: false
 }).parseString;
 
-function updateProperties(value) {
+function coerceProperties(value) {
   var result = value;
 
   // Properties whose value is null or an empty string are removed from the
@@ -84,7 +84,7 @@ module.exports = function (data, meta, callback) {
 
     // Turn boolean strings, floats, and integers into native objects and turn
     // the geopoint into something more readable
-    form = traverse(form).forEach(updateProperties);
+    form = traverse(form).forEach(coerceProperties);
 
     callback(null, form);
   });

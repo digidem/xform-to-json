@@ -1,6 +1,6 @@
 {
   "name": "xform-to-json",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Translate an XForm XML string to JSON.",
   "main": "xform-to-json.js",
   "directories": {

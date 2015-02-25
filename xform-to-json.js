@@ -106,8 +106,7 @@ module.exports = function (data, options, callback) {
       instanceId: (form.meta && form.meta.instanceID) || 'uuid:' + uuid.v1(),
       instanceName: (form.meta && form.meta.instanceName) || formKey,
       formId: form.$.id,
-      version: form.$.version,
-      submissionTime: new Date()
+      version: form.$.version
     };
 
     delete form.$;

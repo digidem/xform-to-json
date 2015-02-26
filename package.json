@@ -9,7 +9,11 @@
   "scripts": {
     "test": "mocha -R spec"
   },
-  "author": "",
+  "author": "Gregor MacLennan",
+  "contributors": [{
+    "name": "Beau Gunderson",
+    "email": "beau@beaugunderson.com"
+  }],
   "license": "MIT",
   "dependencies": {
     "chai": "^1.10.0",

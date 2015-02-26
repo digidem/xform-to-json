@@ -128,7 +128,8 @@ module.exports = function (data, options, callback) {
       }
     });
 
-    if (options.geojson && geojson.geometry.coordinates) {
+    if (options.geojson) {
+      if (!geojson.geometry.coordinates) geojson.geometry = null;
       geojson.properties = form;
       form = geojson;
     }

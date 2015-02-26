@@ -1,0 +1,13 @@
+{
+    "type": "Feature",
+    "geometry": null,
+    "properties": {
+        "test": "value",
+        "meta": {
+            "instanceId": "uuid:43654dc3-a22f-4d1b-9f4f-7471f62bb154",
+            "instanceName": "Test Instance",
+            "formId": "test_form",
+            "version": 1
+        }
+    }
+}

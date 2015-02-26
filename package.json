@@ -1,10 +1,14 @@
 {
   "name": "xform-to-json",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Translate an XForm XML string to JSON.",
   "main": "xform-to-json.js",
   "directories": {
     "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/digidem/xform-to-json.git"
   },
   "scripts": {
     "test": "mocha -R spec"

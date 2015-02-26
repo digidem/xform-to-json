@@ -8,8 +8,8 @@ var path = require('path');
 var assertIsGeojson = require('geojson-assert');
 
 describe('convert-to-json', function (done) {
-  var xml = fs.readFileSync(path.resolve(__dirname, 'simple-geo-point.xml'));
-  var expected = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'simple-geo-point.json')));
+  var xml = fs.readFileSync(path.resolve(__dirname, 'fixtures/simple-geo-point.xml'));
+  var expected = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'fixtures/simple-geo-point.json')));
   var json;
 
   before(function(done) {

@@ -8,8 +8,8 @@ var path = require('path');
 var assertIsGeojson = require('geojson-assert');
 
 describe('convert-to-geojson-no-coords', function (done) {
-  var xml = fs.readFileSync(path.resolve(__dirname, 'simple-no-geo.xml'));
-  var expected = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'simple-no-geo.geojson')));
+  var xml = fs.readFileSync(path.resolve(__dirname, 'fixtures/simple-no-geo.xml'));
+  var expected = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'fixtures/simple-no-geo.geojson')));
   var json;
 
   before(function(done) {

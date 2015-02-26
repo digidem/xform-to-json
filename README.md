@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/digidem/xform-to-json.svg)](https://travis-ci.org/digidem/xform-to-json)
+
 XForm to JSON converter
 =======================
 

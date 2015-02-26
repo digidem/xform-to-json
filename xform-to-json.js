@@ -61,7 +61,8 @@ function isLocation(value) {
 // for the geojson coordinates. If geojson is false, locationField is ignored.
 var defaults = {
   geojson: false,
-  locationField: null
+  locationField: null,
+  meta: {}
 };
 
 // Parses an xform submission from ODK collect into a JSON string, cleaning up
@@ -73,8 +74,6 @@ module.exports = function (data, options, callback) {
   }
 
   options = _.defaults(options, defaults);
-
-  var meta = options.meta || {};
 
   parseXmlString(data, function (err, json) {
     var form;
@@ -112,7 +111,7 @@ module.exports = function (data, options, callback) {
     delete form.$;
 
     // Add any metadata passed to the function
-    _.assign(form.meta, meta);
+    _.assign(form.meta, options.meta);
 
     // Turn boolean strings, floats, and integers into native objects and turn
     // the geopoint into something more readable

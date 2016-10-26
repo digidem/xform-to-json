@@ -1,6 +1,6 @@
 {
   "name": "xform-to-json",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Translate an XForm XML string to JSON.",
   "main": "xform-to-json.js",
   "directories": {
@@ -14,10 +14,12 @@
     "test": "mocha -R spec"
   },
   "author": "Gregor MacLennan",
-  "contributors": [{
-    "name": "Beau Gunderson",
-    "email": "beau@beaugunderson.com"
-  }],
+  "contributors": [
+    {
+      "name": "Beau Gunderson",
+      "email": "beau@beaugunderson.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "lodash": "^3.0.1",

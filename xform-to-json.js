@@ -130,6 +130,7 @@ module.exports = function (data, options, callback) {
     if (options.geojson) {
       if (!geojson.geometry.coordinates) geojson.geometry = null;
       geojson.properties = form;
+      geojson.id = form.meta.instanceId.replace(/^uuid:/, '')
       form = geojson;
     }
 

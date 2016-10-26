@@ -1,6 +1,7 @@
 {
     "type": "Feature",
     "geometry": null,
+    "id": "43654dc3-a22f-4d1b-9f4f-7471f62bb154",
     "properties": {
         "test": "value",
         "meta": {

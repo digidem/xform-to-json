@@ -7,18 +7,13 @@ var _ = require('lodash');
 
 describe('parse-geopoint', function () {
   var geopoints = {
-    '0 0 0 0': {
-      latitude: 0,
-      longitude: 0,
-      altitude: 0, 
-      precision: 0
+    '0.0 0.0 0.0 0.0': {
+      latitude: 0.0,
+      longitude: 0.0,
+      altitude: 0.0,
+      precision: 0.0
     },
-    '-90 -180 1000 5': {
-      latitude: -90.0,
-      longitude: -180.0,
-      altitude: 1000.0,
-      precision: 5.0
-    },
+    '-90 -180 1000 5': '-90 -180 1000 5',
     '-90.0 -180.0 1000.0 5.0': {
       latitude: -90.0,
       longitude: -180.0,

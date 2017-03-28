@@ -45,7 +45,7 @@ function coerceProperties(value) {
 
 // List of sorted keynames on a location object
 // (used for identifying valid location objects)
-var locationKeys = Object.keys(parseGeopoint('0 0 0 0')).sort();
+var locationKeys = Object.keys(parseGeopoint('0.0 0.0 0.0 0.0')).sort();
 
 // Returns true for a location field
 function isLocation(value) {

@@ -2,8 +2,8 @@
     "location": {
         "latitude": 0.0808311,
         "longitude": -76.8624342,
-        "altitude": 0,
-        "precision": 2725
+        "altitude": 0.0,
+        "precision": 2725.0
     },
     "meta": {
         "instanceId": "uuid:43654dc3-a22f-4d1b-9f4f-7471f62bb154",

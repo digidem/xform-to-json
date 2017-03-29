@@ -9,4 +9,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Stricter checking of location fields to avoid mistakenly parsing multi-choice fields as locations [#2](https://github.com/digidem/xform-to-json/pull/2)
 
 
-[1.2.1]: https://github.com/digidem/xform-to-json/compare/v1.2.1...v1.2.0
+[1.2.1]: https://github.com/digidem/xform-to-json/compare/v1.2.0...v1.2.1
